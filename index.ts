@@ -1,8 +1,16 @@
-import express from "npm:express@4.18.2";
+import { Application } from "https://deno.land/x/oak/mod.ts";
 
-const app = express();
+const app = new Application();
 
-app.use(express.static('public'))
+app.use(async (context, next) => {
+  try {
+    await context.send({
+      root: ${Deno.cwd()}/public,
+      index: "index.html",
+    });
+  } catch {
+    await next();
+  }
+});
 
-
-app.listen(8000);
+await app.listen({ port: 8000 });
