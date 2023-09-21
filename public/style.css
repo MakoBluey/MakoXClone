@@ -1,0 +1,260 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 45.3vh 6fr 1fr;
+}
+/*NAV BAR-------------------------------- */
+nav {
+    color: white;
+    width: 44vh;
+    height: 100vh;
+    border-right: 1px rgb(47, 51, 54) solid;
+    font-size: 3vh;
+    padding: 0;
+    align-items: baseline;
+    margin-left: 10px;
+    margin-right: 0;
+    position: fixed;
+    grid-area: 1/1;
+}
+
+.logo {
+    width: 10vh;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    height: 99vh;
+    margin-left: 6vh;
+}
+
+li {
+    display: flex;
+    justify-content: flex-start;  
+    cursor: pointer; 
+    margin: 0 auto 0 0 ;
+    height: 6.5vh;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.2s;
+    border-radius: 20px;
+    margin-left: 2vh;
+}
+
+li:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+li i {
+    margin-right: 4vh;
+}
+
+.nav_post {
+    border-radius: 30px;
+    height: 7vh;
+    width: 32vh;
+    background-color: rgb(0, 132, 255);
+    text-align: center;
+    justify-content: center;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+.nav_post:hover {
+    background-color: rgb(1, 107, 206);
+}
+
+.nav_account {
+    height: 7vh;
+    width: auto;
+    margin-top: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.User_info {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.User_img {
+    width: 5vh;
+    height: 5vh;
+    background-color: aqua;
+    border-radius: 50px;
+    padding: 0;
+    margin: 5px;
+}
+
+.User_name {
+    font-size: 2.5vh;
+}
+
+.User_Search {
+    font-size: 2vh;
+    color: rgb(47, 51, 54);
+}
+
+
+
+/*MAIN CONTENT----------------------------------------*/     
+
+main {
+    grid-area: 1/2;
+}
+.Home{
+    height: 20vh;
+    border-bottom: solid 1px rgb(47, 51, 54);
+    color: white;
+    font-size: 4vh;
+}
+
+.Post_content {
+    height: 100vh;
+}
+
+/*CARD POST--------------------------------------------------------------*/
+
+.Post_Card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+    margin-top: -1px;
+}
+
+.Post_Card_header {
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    color: white;
+    display: flex;
+}
+
+.Post_Card_header img {
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50vh;
+}
+
+.Post_Card_header-user {
+    margin: 0.5vh 0 0 0.5vh;
+}
+
+.Post_Card_header-userS {
+    color: rgb(47, 51, 54);
+    margin: 0.5vh 0 0 0.5vh;
+}
+
+.Post_Card_img  {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Post_Card_img  img{
+ width: 70vh;
+ height: 70vh;
+ border-radius: 2vh;
+}
+
+.Post_Card_interaction{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*ASIDE----------------------------------------*/  
+aside {
+    border-left: solid 1px rgb(47, 51, 54);
+    height: 100%;
+    grid-area: 1/3;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 30px;
+    align-items: flex-start;
+    width: 55vh;
+
+}
+
+.Search {
+    margin-bottom: 10px;
+    width: 45vh;
+    height: 50px;
+    background-color: rgb(47, 51, 54);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.Search i {
+    font-size: 3vh;
+    margin-right: 10px;
+}
+
+.Search input {
+    background-color: rgb(47, 51, 54);
+    height: 100%;
+    width: 100%;
+    color: white;
+    border: none;
+}
+
+.Search input:focus{
+    outline: none;
+}
+
+.Hag{
+    width: 45vh;
+    height: 30vh;
+    background-color: rgb(47, 51, 54);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 1.5vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SusBtn {
+    width: 15vh;
+    height: 5vh;
+    background-color: rgb(0, 132, 255);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px ;
+    justify-content: center;
+    margin-top: 2vh;
+    transition: 0.2s;
+}
+
+.SusBtn:hover {
+    cursor: pointer;
+    background-color: rgb(1, 107, 206);
+}
+
+.NewContent{
+    width: 45vh;
+    height: 90vh;
+    background-color: rgb(47, 51, 54);
+    border-radius: 20px;
+}
