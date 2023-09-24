@@ -10,12 +10,11 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 43vh 6fr 1fr;
+    grid-template-columns: 2.8fr 6fr 1fr;
 }
 /*NAV BAR-------------------------------- */
 nav {
     color: white;
-    width: 42vh;
     height: 100vh;
     border-right: 1px rgb(47, 51, 54) solid;
     font-size: 3vh;
@@ -23,8 +22,8 @@ nav {
     align-items: baseline;
     margin-left: 1vh;
     margin-right: 0;
-    position: fixed;
-    grid-area: 1/1;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -111,9 +110,6 @@ nav li i {
 
 /*MAIN CONTENT----------------------------------------*/     
 
-main {
-    grid-area: 1/2;
-}
 .Home{
     height: 20vh;
     border-bottom: solid 1px rgb(47, 51, 54);
@@ -219,33 +215,37 @@ main {
 aside {
     border-left: solid 1px rgb(47, 51, 54);
     height: 100%;
-    grid-area: 1/3;
     display: flex;
     flex-direction: column;
-    padding: 10px 0 10px 30px;
+    padding: 10px;
     align-items: flex-start;
-    width: 55vh;
-
+    box-sizing: border-box;
 }
 
 .Search {
     margin-bottom: 10px;
-    width: 45vh;
+    width: 100%;
     height: 50px;
     background-color: rgb(47, 51, 54);
     border-radius: 40px;
     display: flex;
     align-items: center;
     padding: 10px;
+    border: solid 0.15rem transparent;
+    color: #5b5f67;
 }
-
-.is-focus {
+.Search:focus-within {
     background-color: black;
+    border: solid 0.15rem rgb(0, 132, 255);
 }
 
 .Search i {
     font-size: 3vh;
     margin-right: 10px;
+}
+
+.Search:focus-within {
+    color: rgb(0, 132, 255);
 }
 
 .Search input {
