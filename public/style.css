@@ -35,7 +35,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     height: 99%;
-    margin-left: 2rem;
 }
 
 nav li {
@@ -56,7 +55,7 @@ nav li:hover {
 }
 
 nav li i {
-    margin-right: 1.5rem;
+    margin-right: 1.5vw;
 }
 
 .nav_post {
@@ -79,7 +78,7 @@ nav li i {
 
 .nav_account {
     height: 7vh;
-    width: auto;
+    width: 93%;
     margin-top: auto;
     padding: 0;
     display: flex;
@@ -92,25 +91,25 @@ nav li i {
     margin: 5px;
 }
 .User_img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3vw;
+    height: 6vh;
     background-color: aqua;
-    border-radius: 50px;
+    border-radius: 50rem;
     padding: 0;
     margin: 5px;
 }
 
 .User_name {
-    font-size: 1.2rem;
+    font-size: 1.2vw;
 }
 
 .User_Search {
-    font-size: 1rem;
+    font-size: 1vw;
     color: rgb(47, 51, 54);
 }
 
 .nav_account i {
-    margin-left: 3rem;
+    margin-left: 5vw;
 }
 
 
