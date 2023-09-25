@@ -141,19 +141,35 @@ nav li i {
     justify-content: center;
     align-items: center;
     transition: 0.2s;
+    flex-direction: column;
 }
 
 .Home-Btn a {
     color: rgb(29, 29, 29);
     text-decoration: none;
+    height: 5.1rem;
+    display: flex;
+    align-items: center;
 }
 
 #LinkActive {
     color: white;
     height: 5.1rem;
-    border-bottom: solid rgb(1, 107, 206) 0.3rem;
     display: flex;
     align-items: center;
+}
+#LinkShowActive {
+    width: 30%;
+    height: 0.3rem;
+    background-color: rgb(0, 132, 255);
+    border-radius: 10px;
+}
+#LinkShowOff {
+    display: none;
+    width: 30%;
+    height: 0.3rem;
+    background-color: rgb(0, 132, 255);
+    border-radius: 10px;
 }
 
 .Post_content {
