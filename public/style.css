@@ -10,32 +10,30 @@
 body{
     background-color: black;
     display: grid;
-    grid-template-columns: 2.8fr 6fr 1fr;
+    grid-template-columns: 2.8fr 6fr 4fr;
 }
 /*NAV BAR-------------------------------- */
 nav {
     color: white;
     height: 100vh;
     border-right: 1px rgb(47, 51, 54) solid;
-    font-size: 3vh;
+    font-size: 1.4rem;
     padding: 0;
     align-items: baseline;
-    margin-left: 1vh;
-    margin-right: 0;
     position: sticky;
     top: 0;
+    box-sizing: border-box;
 }
 
 .logo {
-    width: 10vh;
+    width: 5rem;
 }
 
 nav ul {
     display: flex;
     flex-direction: column;
-    width: 30vh;
-    height: 99vh;
-    margin-left: 6vh;
+    height: 99%;
+    margin-left: 2rem;
 }
 
 nav li {
@@ -48,7 +46,7 @@ nav li {
     padding: 10px;
     transition: background-color 0.2s;
     border-radius: 20px;
-    margin-left: 2vh;
+    margin-left: 1rem;
 }
 
 nav li:hover {
@@ -56,18 +54,20 @@ nav li:hover {
 }
 
 nav li i {
-    margin-right: 4vh;
+    margin-right: 1.5rem;
 }
 
 .nav_post {
     border-radius: 30px;
     height: 7vh;
-    width: 32vh;
+    width: 15rem;
+    margin: 5px auto 0;
     background-color: rgb(0, 132, 255);
+    padding: auto;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
     text-align: center;
-    justify-content: center;
-    padding: 4px;
-    margin-top: 5px;
 }
 
 .nav_post:hover {
@@ -89,8 +89,8 @@ nav li i {
     margin: 5px;
 }
 .User_img {
-    width: 5vh;
-    height: 5vh;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: aqua;
     border-radius: 50px;
     padding: 0;
@@ -98,14 +98,17 @@ nav li i {
 }
 
 .User_name {
-    font-size: 2.5vh;
+    font-size: 1.2rem;
 }
 
 .User_Search {
-    font-size: 2vh;
+    font-size: 1rem;
     color: rgb(47, 51, 54);
 }
 
+.nav_account i {
+    margin-left: 3rem;
+}
 
 
 /*MAIN CONTENT----------------------------------------*/     
@@ -154,7 +157,7 @@ nav li i {
 }
 
 .Post_content {
-    height: 100vh;
+    height: 43.4rem;
 }
 
 /*CARD POST--------------------------------------------------------------*/
@@ -164,7 +167,6 @@ nav li i {
     justify-content: center;
     flex-direction: column;
     border-top: 1px solid rgb(47, 51, 54);
-    border-bottom: 1px solid rgb(47, 51, 54);
     margin-top: -1px;
 }
 
@@ -176,39 +178,40 @@ nav li i {
 }
 
 .Post_Card_header img {
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50vh;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
 }
 
 .Post_Card_header-user {
-    margin: 0.5vh 0 0 0.5vh;
+    margin: 0.2rem 0 0 0.2rem;
 }
 
 .Post_Card_header-userS {
     color: rgb(47, 51, 54);
-    margin: 0.5vh 0 0 0.5vh;
+    margin: 0.2rem 0 0 0.2rem;
 }
 
 .Post_Card_img  {
     width: 100%;
-    height: 70vh;
+    height: 35rem;
     display: flex;
     justify-content: center;
 }
 
 .Post_Card_img  img{
- width: 70vh;
- height: 70vh;
- border-radius: 2vh;
+ width: 35rem;
+ height: 35rem;
+ border-radius: 20px;
 }
 
 .Post_Card_interaction{
     width: 100%;
-    height: 5vh;
+    height: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
 }
 
 /*ASIDE----------------------------------------*/  
@@ -220,6 +223,7 @@ aside {
     padding: 10px;
     align-items: flex-start;
     box-sizing: border-box;
+    margin-right: 3rem;
 }
 
 .Search {
@@ -262,7 +266,6 @@ aside {
 }
 
 .Hag{
-    width: 45vh;
     height: 25vh;
     background-color: rgb(29, 29, 29);
     border-radius: 20px;
@@ -272,18 +275,19 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .SusBtn {
-    width: 13vh;
     height: 5vh;
     background-color: rgb(0, 132, 255);
     border-radius: 30px;
     display: flex;
     align-items: center;
-    padding: 5px ;
+    padding: 10px 20px ;
     justify-content: center;
     transition: 0.2s;
+    font-weight: bolder;
 }
 
 .SusBtn:hover {
@@ -292,7 +296,7 @@ aside {
 }
 
 .NewContent{
-    width: 45vh;
+    width: 100%;
     height: 90vh;
     background-color: rgb(29, 29, 29);
     border-radius: 20px;
@@ -336,7 +340,7 @@ aside {
 }
 
 .Follow {
-    width: 45vh;
+    width: 100%;
     height: 35vh;
     background-color: rgb(29, 29, 29);
     border-radius: 20px;
