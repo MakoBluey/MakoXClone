@@ -241,6 +241,7 @@ aside {
 .Search:focus-within {
     background-color: black;
     border: solid 0.15rem rgb(0, 132, 255);
+    transition: ease
 }
 
 .Search i {
@@ -250,6 +251,7 @@ aside {
 
 .Search:focus-within {
     color: rgb(0, 132, 255);
+    transition: ease
 }
 
 .Search input {
