@@ -224,7 +224,7 @@ nav li i {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 
 /*ASIDE----------------------------------------*/  
